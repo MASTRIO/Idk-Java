@@ -28,7 +28,7 @@ public class Main {
     // Generator Settings
     worldWidth = 1000;
     GeneratorType.set("default");
-    leBiome = "snow";
+    leBiome = "plain";
 
 
     // Set default y level
