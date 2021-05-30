@@ -24,12 +24,36 @@ public class Main {
   // Main method
   public static void main(String[] args) {
 
-
     // Generator Settings
-    worldWidth = 1000;
-    GeneratorType.set("default");
-    leBiome = "plain";
+    if (args[0] == null) {
 
+      GeneratorType.set(args[0]);
+
+    } else {
+
+      GeneratorType.set("default");
+
+    }
+
+    if (args[1] == null) {
+
+      leBiome = args[1];
+
+    } else {
+
+      leBiome = "plain";
+
+    }
+
+    if (!(args[2] == null)) {
+
+      worldWidth = Integer.getInteger(args[2]);
+
+    } else {
+
+      worldWidth = 1000;
+
+    }
 
     // Set default y level
     yLevel = (int) ((Math.random() * (yLevelRandomiser[0] - yLevelRandomiser[1]) + 1) + yLevelRandomiser[1]);

@@ -140,6 +140,33 @@ public class GeneratorType {
 
     }
 
+    // Amongus
+    if (generatorType == "amongus") {
+
+      Main.yLevelRandomiser = new int[] {
+        6,
+        9
+      };
+      Main.seaFloor = new int[] {
+        -100,
+        99,
+        -50
+      };
+      Main.upndown = new int[] {
+        4,
+        1
+      };
+      Main.yLevelDiff = new int[] {
+        2,
+        0
+      };
+      Main.yNoise = new int[] {
+        10,
+        1
+      };
+
+    }
+
   }
 
 }
